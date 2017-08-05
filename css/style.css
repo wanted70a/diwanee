@@ -1,0 +1,787 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display reset - older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+}
+*{
+ 
+  box-sizing: border-box; 
+	
+}
+.wrapper{
+	width:100%;
+	max-width:928px;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+}
+.mobile{display:none;}
+.desktop{display:block;}
+
+/*NAV MENU - DESKTOP AND RESPONSIVE*/
+.mobile-nav{display:none;}
+.desktop-nav{display:inline-block;}
+.hamburger{display:none;}
+.social-nav{display:none;}
+.hidden{display:none;}
+
+/*colors*/
+.gray{
+	background-color:#ededed;
+}
+.subtitles,.nav-link,.tags,.social-footer-link,button{font-size:14px;}
+button{
+	text-align:center;
+	letter-spacing:.15em;
+}
+button:hover{
+	cursor:pointer;
+}
+.subtitles{
+    color: #a9a9a9;
+	letter-spacing:0.15em;
+	font-weight:400;
+}
+
+/*DESKTOP STYLES*/
+header{
+	margin:0 auto;
+	z-index:100;
+	width:100%;
+	top:0;
+	padding-top:20px;
+	background-color:#f2eee3;
+}
+nav{
+	position:relative;
+}
+.logo{
+	display:inline-block;
+	
+}
+
+nav > ul {
+	display:inline-block;
+	position:absolute;
+	right:0;
+}
+
+nav > ul > li {
+	display:inline-block;
+	list-style-type:none
+}
+
+.nav-link{
+	display:inline-block;
+	padding:5px 15px;
+	text-decoration:none;
+	line-height:42px;
+	letter-spacing:.05em;
+	color:#222222;
+} 
+
+
+
+
+#main-banner{
+	position:relative;
+}
+
+.main-banner-text{
+	position:absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	top:32%;
+}
+.main-banner-text>p{
+	font-family:'Helvetica', sans-serif;
+	font-size:24px;
+	line-height:30px;
+	letter-spacing:.01em;
+	color:#222222;
+}
+h1{
+	font-size:80px;
+	font-weight:500;
+}
+ h1::after{
+	content:' ';
+	position:relative;
+	width:52px;
+	height:2px;
+	background-color:#c41230;
+	display:block;
+	margin:20px auto 40px auto;
+}
+#main-banner{	
+	background: url('../img/diwanee-cover.jpg') no-repeat top center scroll;
+    background-size: cover;
+	min-height:800px;
+	
+}
+#main-banner > img{
+	width:100%;
+	position:relative;
+	top:0;
+	
+} 
+
+/*MAIN SEKCIJA*/
+/* TRI STAVKE	 */
+#company >ul{
+	
+	margin-top:-6px;
+	
+}
+
+#company >ul>li{
+	display:inline-block;
+	list-style-type:none;
+	width:33.333%;
+	text-align:center;
+	padding:90px 50px 65px 50px;
+}
+
+#company >ul>li>p{
+	color:#666666;
+	font-weight:300;
+	line-height:24px;
+}
+
+.title{
+	margin:40px 0;
+	font-size:18px;
+	font-weight:700;
+	color:#222222;
+	letter-spacing:0.2em
+}
+
+.normal-line-height{
+	line-height:20px;
+}
+.title::after{
+	content:' ';
+	position:relative;
+	width:52px;
+	height:2px;
+	background-color:#d0d0d0;
+	display:block;
+	margin:35px auto 30px auto;
+}
+
+
+/* INTRODUCTION FOR JOBS AND COMAPANY*/
+#jobs{
+	position:relative;
+}
+
+h2{
+	font-size:50px;
+	color:#222222;
+	line-height:1.45em;
+}
+
+h2::after{
+	content:' ';
+	position:relative;
+	width:52px;
+	height:2px;
+	background-color:#c41230;
+	display:block;
+	margin:30px auto 60px auto;
+}
+
+
+.section-intro{
+	margin:90px auto 65px auto;
+	text-align:center;
+}
+
+.section-intro>p{
+	font-size:24px;
+	color:#222222;
+	line-height:34px;
+	font-weight:300;
+	padding:0 40px;
+
+}
+/*JOBS-LISTING*/
+.job:nth-child(odd){
+	background:#222222;
+	color:#fff;
+}
+
+.job:nth-child(odd) .tags>span{
+	border:1px solid #fff;
+	color:#fff;
+}
+
+
+.job:nth-child(even){
+	background:#fff;
+	color:#222222;
+	padding:60px 0 65px 0;
+}
+.job:nth-child(even) .tags>span{
+	border:1px solid #bbbbbb;
+	color:#c41230;
+}
+
+.job:nth-child(odd) .prijava{
+	border:2px solid #fff;
+	color:#535353;
+}
+
+.job{
+	padding:45px 0 65px 0;
+}
+
+.job ul{
+	padding:0 40px;
+}
+.job>ul>li{
+	display:block;
+}
+
+h3{
+	margin-bottom:20px;
+	font-size:20px;
+	font-weight:500;
+}
+
+.job-description{
+	position:relative;
+}
+
+.job-description>p{
+	font-weight:300;
+	font-size:19px;
+	letter-spacing:0.01em;
+	line-height:28px;
+	width:60%;
+	
+}
+
+.prijava{
+	position:absolute;
+	right:0;
+	top:5px;
+	background-color:transparent;
+	padding:15px 40px;
+	border:2px solid #222222;
+	color:#535353;
+}
+
+.tags{
+	margin-top:40px;
+}
+.tags>span{
+	margin-right:10px;
+	padding:10px 24px;
+	
+}
+
+.load-more{
+	margin:80px auto 190px auto;
+	display:block;
+	background-color:#eeeeee;
+	padding:20px 20px;
+	color:#333333;
+	border:none;
+	width:240px;
+}
+
+/*DIWANEE*/
+#diwanee>div>p{
+	text-align:left;
+	font-weight:300;
+	font-size:18px;
+	line-height:28px;
+}
+/*FOLLOW*/
+.follow-us{
+	text-align:center;
+	padding-top:170px;
+	padding-bottom:110px;
+}
+
+.follow-us-links{
+	display:inline-block;
+	margin:0 5px;
+	position:relative;/*novo*/
+}
+.twt-grow{
+	left:-70px;
+	position:absolute;
+}
+.fb-grow{
+	position:absolute;
+}
+/* FOOTER */
+footer{
+	background-color:#222222; 
+}
+
+#contact{
+	padding-top:135px;
+	position:relative;
+	margin-bottom:70px;
+	
+}
+ 
+#contact >ul{
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+}
+ 
+#contact ul li{
+	color:#666666;
+	line-height:30px;
+	list-style-type:none;
+} 
+ 
+.beirut{
+	position:absolute;
+	left:42%;
+	top:130px;
+}
+.belgrade{
+	position:absolute;
+	right:0;
+	top:135px;
+}
+
+.map-marker{
+	padding-left:30px;
+	margin-bottom:25px;
+	background: url('../img/marker-ikona.jpg') no-repeat left 0; 
+}
+h4{
+	color:#fff;
+	font-size:16px;
+}
+
+#contact > ul >li{
+	 display:block;
+	 font-size:15px;
+	 color:#666666;
+}
+ 
+#copyright{
+	 background-color:#1e1e1e;
+}
+
+.social-footer-mob{display:none;}
+.social-footer{
+	display:inline-block;
+	position:absolute;
+	right:0;
+	top:20px;
+	
+}
+.social-footer >li{
+	 display:inline-block;
+	 margin-left:30px;
+	
+	
+}
+.social-footer-link{
+	 color:#666666;
+	 text-decoration:none;
+}
+
+#copyright > .wrapper{
+	padding:25px 0;
+}
+.copyright{
+	 display:inline-block;
+	 color:#666666;
+	 font-size:12px;
+	 letter-spacing:0.01em;
+}
+.copyright-mob{
+	display:none;
+	color:#666666;
+	font-size:12px;
+	letter-spacing:0.01em;
+
+}
+
+@media screen and (max-width:1024px){
+	/* TABLET STYLES */
+	.wrapper{
+		max-width:1024px;
+		padding:0 25px;
+	}
+	
+	/*NAV MENU - DESKTOP AND RESPONSIVE*/
+	header{
+		position:fixed;
+		background-color:#f0ece0;
+	}
+	.logo{
+		margin-bottom:20px;
+	}
+	.desktop-nav{display:none;}
+	.mobile-nav{
+		/* display:block; */
+		width:100%;
+		background-color:rgba(34,34,34,0.98);
+		text-align:center;
+		position:fixed;
+		padding-bottom:20px;
+		padding-top:30px;
+		/* top:0; */
+	}
+	
+	.mobile-nav>li{
+		display:block;
+	}
+	
+	.nav-link{
+		color:#cccccc;
+		font-size:24px;
+		font-weight:300;
+	}
+	
+	.hamburger{display:inline-block;
+		position:fixed;
+		right:25px;
+		top:30px;
+	}
+	.hamburger:hover{
+		cursor:pointer;
+	}
+	
+	/*main banner*/
+	h1{
+		font-size:70px;
+	}
+	#main-banner{	
+		background: url('../img/diwanee-cover-tablet.jpg') no-repeat top center scroll;
+		background-size: cover;
+		min-height:600px;
+	}
+	/*3 cards section*/
+	#company >ul>li{
+		padding:40px 20px 90px 20px;
+	}
+	
+	#company img{
+		transform:scale(0.75);
+	}
+	
+	#company >ul>li>p{
+		line-height:28px;
+	}
+	
+	.title{
+		margin-top:12px;
+		margin-bottom:25px;
+	}
+	
+	.title::after{
+		content:' ';
+		position:relative;
+		width:35px;
+		height:2px;
+		margin:25px auto 5px auto;
+	}
+	
+	.section-intro {
+		margin: 110px auto 65px auto;
+		text-align: center;
+	}
+	
+	.section-intro>p{
+		padding:0 85px;
+	}
+	/* JOBS */
+	.job ul {
+		padding: 0 70px;	
+	}
+	
+	.load-more{
+		margin: 50px auto 180px auto;
+	}
+	
+	/*follow us*/
+	.follow-us {
+		text-align: center;
+		padding-top: 160px;
+		padding-bottom: 130px;
+	}
+	
+	/*KONTAKT*/
+	.dubai{
+		margin-left:45px;
+	}
+	
+	.beirut{
+		left:44%;
+	}
+	.belgrade{
+		right:70px;
+	}
+	
+	#copyright {
+    background-color: #1e1e1e;
+    padding: 0 65px;
+	}
+}
+
+@media screen and (max-width:960px){
+/*UKLANJANJE BUTTONS NA POSLOVIMA, menjanje boja,sredjivanje tagova i sredjivanje Footera*/
+	.prijava{
+		display:none;
+	}
+	.job{
+		padding:30px 0 40px 0;
+	}
+	
+	.job ul{
+		padding-left:14px;
+		padding-right:40px;
+	}
+	.job:nth-child(odd){
+		background:#fff;
+		color:#222222;
+	}
+
+	.job:nth-child(odd) .tags>span{
+		border:1px solid #fff;
+		color:#fff;
+	}
+
+
+	.job:nth-child(even){
+		background:#f8f7f5;
+		color:#222222;
+		padding:30px 0 40px 0;
+	}
+	.job:nth-child(even) .tags>span,.job:nth-child(odd) .tags>span{
+		border:none;
+		color:#c41230;
+		padding:0;
+		margin-right:15px;
+	}
+	
+	.tags{
+		margin-top:20px;
+	}
+	/*FOOTER*/
+	.dubai{
+		margin-left:0;
+	}
+	.beirut{
+	position:absolute;
+	left:40%;
+	}
+	.belgrade{
+		position:absolute;
+		right:25px;
+		top:135px;
+	}
+
+	.map-marker{
+		padding-left:30px;
+		margin-bottom:25px;
+		background: url('../img/marker-ikona.jpg') no-repeat left 0; 
+	}
+	#copyright{
+		padding:0 25px;
+	}
+	
+	.copyright{display:none;}
+	.copyright-mob{display:block;}
+}
+
+
+
+@media screen and (max-width:690px){/*Footer i 3 kartice sa vrha display block*/
+	.section-intro {
+    margin: 60px auto 65px auto;
+	}
+	
+	h2{
+		font-size: 40px;
+		font-weight:500;
+	}
+	.section-intro p{
+		padding: 0;
+	}
+	/*FOOTER*/
+	#contact{
+		padding-top:90px;
+		position:relative;
+		margin-bottom:30px;
+		
+	}
+	 
+	#contact >ul{
+		display:block;
+		text-align:left;
+		margin-bottom:55px;
+	}
+	 
+	#contact ul li{
+		color:#666666;
+		line-height:30px;
+		list-style-type:none;
+	} 
+	
+	.dubai{
+		margin-left:0;
+	}
+	
+	.beirut{
+		position:static;
+		/* left:42%; */
+	}
+	.belgrade{
+		position:static;
+		right:0;
+		top:135px;
+	}
+	
+	.social-footer-mob{
+		display:block;
+		padding:0px 25px 30px 25px;
+		position:relative;
+	}
+	
+	.social-footer-mob li{
+		display:inline-block;
+		margin-right:25px;
+	}
+	
+	.domain{
+		position:absolute;
+		right:25px;
+		top:9px;
+	}
+	
+	.social-footer{display:none;}
+	/*3 kartice sa vrha strane*/
+	#company >ul>li{
+		display:block;
+		text-align:center;
+		width:100%;
+	}
+}
+
+@media screen and (max-width:640px){/*MOBILE STYLES*/
+	/*NAVIGACIJA*/
+	.mobile-nav{
+		padding-top:121px;
+		padding-bottom:20px;
+	}
+	
+	.social-nav{
+		display:block;
+		text-align:left;
+		margin:180px 40px 20px 40px;
+		position:relative;
+		list-style-type:none;
+	}
+	
+	
+	.social-nav p{
+		font-size:16px;
+		display:inline-block;
+		color:#cccccc;
+		font-weight:300;
+		letter-spacing:.21em;
+	}
+	
+	.nav-twt{position:absolute; right:0; top:-3px;}
+	.nav-fb{position:absolute; right:40px; top:-5px;}
+	
+	/*COVER SLIKA*/
+	.mobile{display:block;}
+	.desktop{display:none;}
+	
+	h1{
+		font-size:50px;
+		color:#fff;
+		margin-bottom:50px;
+	}
+	
+	h1::after{
+		content:' ';
+		height:0;
+		background-color:#c41230;
+		display:block;
+		margin:0 auto;
+	}
+	
+	.main-banner-text>p{
+		font-size:20px;
+	}
+	
+	
+	
+	/*POSLOVI*/
+	.tags span{
+		border:none;
+	}
+	
+	.section-intro {
+		margin: 30px auto 65px auto;
+	}
+	
+	.section-intro>p{
+		font-size:20px;
+	}
+	.job-description>p{
+		font-size:15px;
+		width:100%;
+	}
+	
+	.load-more {
+		margin: 70px auto 90px auto;
+	}
+	
+	/*follow us*/
+	.follow-us {
+		text-align: center;
+		padding-top: 120px;
+		padding-bottom: 70px;
+	}
+
+}
+@media screen and (max-width:320px){/*MOBILE STYLES*/
+	#main-banner{	
+		background: url('../img/diwanee-cover-mobile.jpg') no-repeat top center scroll;
+		background-size: cover;
+		min-height:620px;
+	}
+}
