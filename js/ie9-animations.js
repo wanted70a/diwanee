@@ -24,7 +24,7 @@ $(document).ready(function(){
 	//DUGME ZA PRIJAVU NA POSAO
 	$('.prijava').hover(
 		function() {
-			$(this).stop().animate({backgroundColor:'#535353', color:'#fff',borderColor:'#5'}, 300);
+			$(this).stop().animate({backgroundColor:'#535353', color:'#fff',borderColor:'#535353'}, 300);
         },
 		function () {
 			$(this).stop().animate({backgroundColor:'#fff',color:'#535353',borderColor:'#222222'}, 300);
